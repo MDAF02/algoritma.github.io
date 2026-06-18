@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Searching</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Algoritma Searching</h1>
+
+    <input type="text" id="arrayData"
+        placeholder="Contoh: 1,2,3,4,5,6">
+
+    <input type="number" id="target"
+        placeholder="Angka dicari">
+
+    <select id="searchType">
+        <option value="linear">Linear Search</option>
+        <option value="binary">Binary Search</option>
+    </select>
+
+    <button onclick="jalankanSearch()">Cari</button>
+
+    <h3>Proses Pencarian:</h3>
+    <div id="langkah"></div>
+    <div class="rumus">
+    <h3>Rumus Binary Search</h3>
+
+    <p>
+        mid = Math.floor((low + high) / 2)
+    </p>
+
+    <p>
+        Jika target > arr[mid]
+        → cari ke kanan
+    </p>
+
+    <p>
+        Jika target < arr[mid]
+        → cari ke kiri
+    </p>
+    </div>
+    <div class="rumus">
+    <h3>Rumus Interpolation Search</h3>
+
+    <p>
+    pos = low +
+    ((target - arr[low]) *
+    (high - low))
+    /
+    (arr[high] - arr[low])
+    </p>
+    </div>
+
+    <h3>Hasil:</h3>
+    <p id="hasilSearch"></p>
+
+    <a href="index.html">Kembali</a>
+
+    <script src="js/search.js"></script>
+
+</body>
+</html>

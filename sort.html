@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Algoritma Sorting</h1>
+
+    <input type="text" id="dataInput"
+        placeholder="Contoh: 5,3,8,1,2">
+
+    <select id="sortType">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="builtin">Array.sort()</option>
+    </select>
+
+    <button onclick="jalankanSort()">Urutkan</button>
+    <h3>Proses Pengurutan:</h3>
+    <div id="langkahSort"></div>
+    <h2>Tentang Algoritma</h2>
+
+    <div id="penjelasan">
+    Pilih algoritma untuk melihat cara kerjanya.
+    </div>
+
+    <h3>Hasil:</h3>
+    <p id="hasil"></p>
+
+    <a href="index.html">Kembali</a>
+
+    <script src="js/sort.js"></script>
+
+</body>
+</html>
